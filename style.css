@@ -192,6 +192,52 @@ nav ul li a:hover {
     font-weight: 600;
 }
 
+/* --- PORTFOLIO GRID SYSTEM --- */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.portfolio-card {
+    background-color: #101622; /* Matches your premium dark theme */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Premium Hover Glow Effect */
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    border-color: #c5a880; /* Gold accent border */
+    box-shadow: 0 10px 20px rgba(197, 168, 128, 0.1);
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.portfolio-card h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin: 15px 0 5px 0;
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.portfolio-card p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    line-height: 1.4;
+}
+
 /* ==========================================
    6. CONTACT SECTION
    ========================================== */
